@@ -1,0 +1,246 @@
+* {
+    margin: 2px;
+}
+
+body {
+    font-size: 24px;
+    color: white;
+    height: 99vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* HEADER */
+.flex-header {
+    background-color: #07beb8;
+    padding-top: 2rem;
+    padding-bottom: 3rem;    
+}
+
+header section.logo {
+    display: flex;
+    color:#fff;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+header section.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header section.header-contact {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+header section.header-contact a {
+    text-decoration: none;
+    color: #fff;
+}
+/* MAIN */
+.flex-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+}
+
+main.flex-main h1, h2, h3 {
+    padding-bottom: 20px;
+}
+/* NAV */
+.flex-nav {
+    background-color: #68d8d6;
+    padding-top: 2rem;
+    flex: 1 1 5rem;
+}
+
+main nav.flex-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding-left: 0;
+    
+}
+
+main nav.flex-nav ul li {
+    padding-bottom: 10px;
+    letter-spacing: 0.1em;
+}
+
+main nav.flex-nav ul a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+    main nav.flex-nav ul li:hover {
+    color:#fff;    
+    background: #3dccc7;
+    display: block;
+    border-bottom: 1px solid #c4fff9;
+    border-radius: 3px;
+}
+}
+/* MAIN CONTENT  */
+.flex-article {
+    background-color: #3dccc7;
+    padding-top: 2rem;
+    flex: 3 3;
+}
+/* SIDEBAR */
+.flex-aside {
+    background-color: #9ceaef;
+    padding-top: 2rem;
+    flex: 1 1 5rem;
+}
+
+main section.aside-list {
+    margin-bottom: 30px;
+}
+
+main aside.flex-aside ul li {
+    text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+    main aside.flex-aside ul li {
+        text-align: center;
+    }
+}
+
+main aside.flex-aside section.aside-images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    /* box-sizing: border-box; */
+}
+
+main aside.flex-aside section.aside-images a {
+    display: inline-block;
+    margin: 0;    
+}
+
+main aside.flex-aside section.aside-images div {
+    width: 45px;
+    height: 80px;
+    background-color: black;
+}
+/* FOOTER */
+.flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c4fff9;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+footer section.footer-left {
+    display: flex;
+    flex-direction: column;
+    color: #07beb8;
+    font-size: 1rem;
+}
+
+footer section.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    color: #07beb8;
+}
+
+footer section.footer-right a {
+    color: #07beb8;
+}
+
+footer section.footer-right i {
+    padding-left: 20px;
+}
+
+/* STRANA 2 PROIZVODI */
+/* NAV */
+
+main nav.flex-nav2 {
+    background-color: #68d8d6;
+    padding-top: 2rem;
+    flex: 1 1 3rem;
+}
+/* MAIN */
+main article.flex-article2 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  /* TRECA STRANA NEGA */
+  /* MAIN ARTICLE MAIN CONTENT */
+  main article.flex-article h2 {
+      padding-top: 20px;
+  }
+  /* CETVRTA STRANA ZASTO */
+/* MAIN ARTICLE MAIN CONTENT */
+
+
+/* PETA STRANA SAVETI */
+/* MAIN ARTICLE MAIN CONTENT */
+main article.flex-article ol li {
+    text-align: left;
+    padding-left: 10px;
+}
+
+main article.flex-article ul {
+    list-style-type: square;
+}
+
+main article.flex-article ul li {
+    text-align: left;
+    padding-left: 10px;
+}
+
